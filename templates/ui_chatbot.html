@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Empathetic Mental Health Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="header">
+      <div class="header-text">
+        <h1>Empathetic Mental Health Support Chatbot</h1>
+        <p>Prototype for AI-assisted emotional support. Not a replacement for professional care.</p>
+      </div>
+      <div class="badge">Student Prototype · CSC485</div>
+    </div>
+
+    <div class="content">
+      <!-- Chat Section -->
+      <div class="chat-section">
+        <div class="chat-window" id="chatWindow">
+          <!-- Example conversation (auto-cleared on first real message) -->
+          <div id="exampleMessages">
+            <div class="message-row user">
+              <div class="user-bubble bubble">
+                I feel exhausted lately and a bit useless… I’m trying my best but it never feels enough.
+                <div class="timestamp">User · 21:14</div>
+              </div>
+              <div class="avatar user">U</div>
+            </div>
+
+            <div class="message-row">
+              <div class="avatar bot">AI</div>
+              <div class="bot-bubble bubble">
+                Thank you for trusting me and sharing this. What you’re feeling makes sense, especially if
+                you’ve been trying hard for a long time. 🌱<br>
+                From what you wrote, it sounds like you are <strong>tired</strong> and maybe being very hard on
+                yourself.
+                You still deserve kindness, even when things don’t go perfectly.<br>
+                If you feel okay to share, what has been draining you the most recently?
+                <div class="timestamp">Chatbot · 21:14</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <textarea id="userInput" placeholder="Type a message…"></textarea>
+          <button class="send-btn" id="sendBtn">Send</button>
+        </div>
+      </div>
+
+      <!-- Sidebar Section -->
+      <div class="sidebar">
+        <div class="panel">
+          <div class="panel-title">Emotional Insight (Prototype)</div>
+          <div class="badge-emotion">
+            Detected emotion: <span class="score" id="emotionBadge">Sadness (0.82)</span>
+          </div>
+          <ul class="emotion-list" id="emotionList">
+            <li><span>Primary</span><span>Sadness</span></li>
+            <li><span>Secondary</span><span>Anxiety</span></li>
+            <li><span>Intensity</span><span>0.82</span></li>
+            <li><span>Risk</span><span>low</span></li>
+            <li><span>Need 1</span><span>validation</span></li>
+            <li><span>Need 2</span><span>support</span></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">Safety & Support</div>
+          <p class="safety-text">
+            This chatbot is <span class="safety-highlight">not a doctor</span> and cannot provide
+            diagnosis, medication, or emergency help.
+            <br><br>
+            If you are in immediate danger or thinking of self-harm, please contact local emergency services
+            or a trusted professional as soon as possible.
+          </p>
+          <p class="disclaimer">
+            Prototype use only · Messages are not stored in this demo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+google-genai
+pydantic
+protobuf>=5.26.1,<6
