@@ -19,7 +19,7 @@ from google import genai
 # ---------------------------
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
-UI_FILE = BASE_DIR / "ui_chatbot.html"
+UI_FILE = BASE_DIR / "templates/ui_chatbot.html"
 
 # ---------------------------
 # App init (ONLY ONCE)
